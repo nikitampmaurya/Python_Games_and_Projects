@@ -1,3 +1,6 @@
+"""
+Description: It is a one-player game, the player has to identify one alphabet that is common in the two given lists. 
+"""
 import string #to import alphabets
 import random #to import random function
 print("Hi there, let's play spotting")
