@@ -1,5 +1,7 @@
 """
-Description: Player msut write the font of the given word. 
+Description: Player msut write the font colour of the given word. 
+For example: the given word is "white", then given option are "white" or "black". Here, the correct answer is "black", 
+because player is expected to choose the colour of the font.  
 """
 
 import random
