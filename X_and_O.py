@@ -1,3 +1,6 @@
+"""
+Aim: To build X and zero game
+"""
 import numpy
 board=numpy.array([['_','_','_'],['_','_','_'],['_','_','_']]) #for creating 3x3 board
 p1s='X' #for storing symbol X for player 1
@@ -6,8 +9,8 @@ print("Welcome here, Let's play X and O")
 
 def check_rows(symbol): #to check if any player has won or not by checking each position
     for r in range(3): #since board has 3 rows
-        count=0        #for controlling and tracking the repeatition 
-        for c in range(3): #since board has 3 colmuns 
+        count=0        #for controlling and tracking the repetition 
+        for c in range(3): #since board has 3 columns 
             if board[r][c]==symbol:   
                 count=count+1       #if place gets fill, add 1
         if count==3:                #if count becomes 3 then announce the winner
