@@ -1,8 +1,9 @@
 """
 Aim: To build X and zero game
+Description: Each player tries to line up the same three symbols in a chain, either vertically, horizontally, or diagonally. 
 """
-import numpy
-board=numpy.array([['_','_','_'],['_','_','_'],['_','_','_']]) #for creating 3x3 board
+import numpy #for creating 3x3 board
+board=numpy.array([['_','_','_'],['_','_','_'],['_','_','_']]) 
 p1s='X' #for storing symbol X for player 1
 p2s='O' #for storing symbol O for player 2
 print("Welcome here, Let's play X and O")
