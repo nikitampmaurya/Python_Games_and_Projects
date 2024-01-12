@@ -1,6 +1,6 @@
 """
 Description: This game will have 10 rounds back to back. You will be presented with one word and two options. 
-You must write the font colour of the given word. 
+You must select the font colour of the given word. 
 For example: the given word is "white", then given option are "white" or "black". Here, the correct answer is "black", 
 because player is expected to choose the colour of the font.  
 """
@@ -8,7 +8,7 @@ because player is expected to choose the colour of the font.
 import random  #import random module to generate random numbers 
 from colorama import Fore, Style  #import colours 
 
-def select_random_numbers():               #we need three random numbers
+def select_random_numbers():               #this function will generate three random numbers
     while True:                            #loop will go on until we get three randomly selected distinct numbers
         num1 = random.randint(0, 5)        #num1 to randomly select a word from the word list
         num2 = random.randint(0, 5)        #num2 to randomly select a colour from the color list
@@ -17,14 +17,14 @@ def select_random_numbers():               #we need three random numbers
             break
     return num1, num2, num3
 
-def print_random_word_and_options(word_list, color_list, num1, num2, num3):     
+def print_random_word_and_options(word_list, color_list, num1, num2, num3):     #this function prints a randomly selected word in a randomly selected colour
     random_word = word_list[num1]                                                
     random_color = color_list[num2]
 
-    print(random_color + random_word + Style.RESET_ALL)
+    print(random_color + random_word + Style.RESET_ALL) 
 
-    list = [word_list[num3], word_list[num2]]
-    random.shuffle(list)
+    list = [word_list[num3], word_list[num2]] #to print two options in different pattern the each time
+    random.shuffle(list)                     
     print(list[1], "or", list[0])
 
     return list, num2
