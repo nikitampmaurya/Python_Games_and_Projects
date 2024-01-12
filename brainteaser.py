@@ -37,17 +37,20 @@ def play_game():
     score = 0
 
     while rounds < 10:
+        #we are calling the function that generates three random numbers for selecting words and colors
         num1, num2, num3 = select_random_numbers()
 
+        #we are calling the function to print a random word and two options for the player to choose the color
         word_options = print_random_word_and_options(word_list, color_list, num1, num2, num3)
-
+        #ask for player's answer
         ans = input("a or b: ")
+        #this dictionary with 'a' and 'b' as keys and corresponding word options
         new_list = {"a": word_options[1], "b": word_options[0]}
-
+        # Check if player's choice is valid or not
         if ans in ["a", "b"]:
             # Find the index of the colour in the color_list
             color_index = color_list.index(color_list[num2])
-
+            # Check if the player's choice matches the color of the word
             if new_list[ans] == word_list[color_index]:
                 print("correct")
                 score += 1
