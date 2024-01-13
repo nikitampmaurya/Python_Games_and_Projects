@@ -48,10 +48,9 @@ def play_game():
         new_list = {"a": word_options[1], "b": word_options[0]}
         # Check if the player's choice is valid or not
         if ans in ["a", "b"]:
-            # Find the index of the colour in the color_list
-            color_index = color_list.index(color_list[num2])
+        
             # Check if the player's choice matches the colour of the word
-            if new_list[ans] == word_list[color_index]:
+            if new_list[ans] == word_list[num2]:
                 print("correct")
                 score += 1
             else:
