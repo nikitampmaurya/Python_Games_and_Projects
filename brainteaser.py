@@ -7,6 +7,14 @@ because player is expected to choose the colour of the font.
 
 import random  #import random module to generate random numbers 
 from colorama import Fore, Style  #import colours 
+import time
+from datetime import datetime, timedelta
+import math
+
+time_a = datetime.now()
+
+# Print the result
+
 
 def select_random_numbers():               #this function will generate three random numbers
     while True:                            #loop will go on until we get three randomly selected distinct numbers
@@ -60,7 +68,16 @@ def play_game():
 
         rounds += 1 ## Increment the round 
 
-    print("Your score:", score, "/", rounds)  # Print the final score after completing 10 rounds
+    time_b = datetime.now()
+    time_difference = time_b - time_a
+    convert_into_seconds = time_difference.total_seconds()
+    total_time_taken = math.floor(convert_into_seconds)
+    print("your score:", score, "/", rounds)  # Print the final score after completing 10 rounds
+    print("Completed in:",total_time_taken, "seconds")
+
+    
 
 # Run the game
 play_game()
+
+
