@@ -21,9 +21,9 @@ def print_random_word_and_options(word_list, color_list, num1, num2, num3): #thi
     random_word = word_list[num1]     #to select random word from the list                                           
     random_color = color_list[num2]   #to select random font from the list
 
-    print(random_color + random_word + Style.RESET_ALL) #prints a randomly selected word in a randomly selected color
-
-    list = [word_list[num3], word_list[num2]] #to print two options 
+    print(random_color + random_word + Style.RESET_ALL) #prints the first part of the question by printing a randomly selected word in a randomly selected color and resets the font colour after printing
+     
+    list = [word_list[num3], word_list[num2]] #to print the second part of the question with two randomly selected words in different font
     random.shuffle(list)                     #to ensure randomness in the list
     print(list[1], "or", list[0])
 
@@ -31,26 +31,26 @@ def print_random_word_and_options(word_list, color_list, num1, num2, num3): #thi
 
 def play_game():
     
-    word_list = ["green", "white", "red", "purple", "blue", "yellow"] # List of words
-    color_list = [Fore.GREEN, Fore.WHITE, Fore.RED, Fore.MAGENTA, Fore.BLUE, Fore.YELLOW] # List of font
+    word_list = ["green", "white", "red", "purple", "blue", "yellow"] #List of words
+    color_list = [Fore.GREEN, Fore.WHITE, Fore.RED, Fore.MAGENTA, Fore.BLUE, Fore.YELLOW] #List of font colours
     rounds = 0
     score = 0
 
     while rounds < 10:
-        #we are calling the function that generates three random numbers for selecting words and colors
+        #we are calling the function in every round to generate three random numbers to select words and font colors randomly
         num1, num2, num3 = select_random_numbers()
 
-        #we are calling the function to print a random word and two options for the player to choose the color
+        #we are calling the function in every round to print the question which is one random word and then two options for the player to choose the colour
         word_options = print_random_word_and_options(word_list, color_list, num1, num2, num3)
-        #ask for player's answer
+        #ask for the player's answer
         ans = input("a or b: ")
         #this dictionary with 'a' and 'b' as keys and corresponding word options
         new_list = {"a": word_options[1], "b": word_options[0]}
-        # Check if player's choice is valid or not
+        # Check if the player's choice is valid or not
         if ans in ["a", "b"]:
             # Find the index of the colour in the color_list
             color_index = color_list.index(color_list[num2])
-            # Check if the player's choice matches the color of the word
+            # Check if the player's choice matches the colour of the word
             if new_list[ans] == word_list[color_index]:
                 print("correct")
                 score += 1
