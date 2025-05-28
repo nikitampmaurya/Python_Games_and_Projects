@@ -1,16 +1,16 @@
-🧩 Games, Data Analysis, and Academic Assignments with Python Programming  
+# 🧩 Games, Data Analysis, and Academic Assignments with Python Programming  
 
 Welcome to this repository. It has collection of my Python work that I’ve built as part of my learning journey. It includes three games, two data analysis projects, and academic assignments. Here’s what you’ll find inside:
 
-🎮 Mini Python Games
+# 🎮 Python Games
 
 I started learning python by building some games. And there are three games 
 
-Brainteaser (Brainteaser.py) 
+1. Brainteaser (Brainteaser.py) 
 
-Spot the Similarity (Spot the Similarity.py) 
+2. Spot the Similarity (Spot the Similarity.py) 
 
-Tic Tac Toe (Tic Tac Toe.py) 
+3. Tic Tac Toe (Tic Tac Toe.py) 
 
 # There are two data analysis projects i.e. Data Analysis Project 1.ipynb and mydataanalysisproject2.ipynb
 # Data files of the above two projects are Diwali Sales Data.csv and gapminder_clean.csv
