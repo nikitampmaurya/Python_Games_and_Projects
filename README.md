@@ -4,7 +4,7 @@ Welcome to this repository. It has collection of my Python work that I’ve buil
 
 # 🎮 Python Games
 
-I started learning python by building some games. And there are three games 
+I started learning python by building some games. 
 
 1. Brainteaser (Brainteaser.py) 
 
