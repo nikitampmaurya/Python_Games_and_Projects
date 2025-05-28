@@ -10,13 +10,30 @@ I started learning python by building some games. And there are three games
 
 2. Spot the Similarity (Spot the Similarity.py) 
 
-3. Tic Tac Toe (Tic Tac Toe.py) 
+3. Tic Tac Toe (Tic Tac Toe.py)
 
-# There are two data analysis projects i.e. Data Analysis Project 1.ipynb and mydataanalysisproject2.ipynb
-# Data files of the above two projects are Diwali Sales Data.csv and gapminder_clean.csv
+# 📊 Data Analysis Projects 
 
-# There are assignments i.e. Python_Assignment_1 
+Project 1 (Data Analysis Project 1.ipynb)
+Dataset: Diwali Sales Data.csv
 
-# Within Python_Assignment_1
+Project 2 (mydataanalysisproject2.ipynb)
+Dataset: gapminder_clean.csv
 
-# There are Assignment_1_202425.docx is instructions in word file, Part1A_NikitaMaurya_201820956-2.ipynb, Part1B_NikitaMaurya_201820956-2.ipynb, Part1C_NikitaMaurya_201820956-2.ipynb, Part1D_NikitaMaurya_201820956-2.ipynb are the code, annotated-Nikita_Maurya_201820956_LIFE733-1.docx.pdf is the word file with pictures of output. 
+# 📝 Python Assignment Work
+
+In the folder Python_Assignment_1, you’ll find my submission for a Python coursework assignment. It includes:
+
+Assignment_1_202425.docx – The official instructions.
+
+Four Jupyter notebooks: Each notebook solves a different part of the assignment. 
+
+Part1A_NikitaMaurya_201820956-2.ipynb
+
+Part1B_NikitaMaurya_201820956-2.ipynb
+
+Part1C_NikitaMaurya_201820956-2.ipynb
+
+Part1D_NikitaMaurya_201820956-2.ipynb
+
+annotated-Nikita_Maurya_201820956_LIFE733-1.docx.pdf (screenshots of the outputs)
